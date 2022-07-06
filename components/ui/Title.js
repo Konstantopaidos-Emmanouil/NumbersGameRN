@@ -1,24 +1,20 @@
-import { View, Text, StyleSheet } from 'react-native'
-import React from 'react'
-import Colors from '../../constants/colors'
+import { Text, StyleSheet } from "react-native";
+import React from "react";
 
-const Title = ({children}) => {
-  return (
-    <Text style={styles.title}>{children}</Text>
-  )
-}
+const Title = ({ children }) => {
+  return <Text style={styles.title}>{children}</Text>;
+};
 
-export default Title
+export default Title;
 
 const styles = StyleSheet.create({
-    title:{
-        fontSize:24,
-        fontWeight:'700',
-        color: 'white',
-        textAlign:'center',
-        borderWidth:2,
-        borderColor: 'white',
-        padding:12,
-
-    }
-})
+  title: {
+    fontFamily: "open-sans-bold",
+    fontSize: 24,
+    color: "white",
+    textAlign: "center",
+    borderWidth: 2,
+    borderColor: "white",
+    padding: 12,
+  },
+});
